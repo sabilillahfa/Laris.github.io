@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- My CSS -->
-  <link rel="stylesheet" href="css/style.css">
   
     <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -21,8 +18,14 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:200,400,600&display=swap"
     rel="stylesheet">
+  
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/stylefio.css">
+    <link rel="stylesheet" href="css/style.css">
+
   <title>Laris.com - Kategori</title>
 </head>
+
 
 <body>
   <!-- Navbar -->
@@ -30,7 +33,7 @@
     <div class="container">
       
     <!-- Logo Navbar -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="img/logo.png" alt="Laris.com">
       </a>
 
@@ -44,10 +47,10 @@
             <a class="nav-link" href="index.html">Beranda</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link active" href="#">Kategori</a>
+            <a class="nav-link active" href="kategori.html">Kategori</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Tentang Kami</a>
+            <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
           </li>
         </ul>
         <a href="cart.html" class="nav-link text-white"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i> Keranjangku (<span>0</span>)</a>
@@ -67,61 +70,62 @@
   </nav>
   <!-- Akhir Navbar -->
 
-    <!-- Breadcrumbs -->
+
+  <!-- Breadcrumbs -->
   <div class="container mt-5">
     <nav>
       <ol class="breadcrumb bg-transparent pl-0">
-        <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+        <li class="breadcrumb-item"><a href="kategori.html">Kategori</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Makanan dan Minuman</li>
       </ol>
     </nav>
   </div>
 
-  <!-- Konten di sini -->
-  <div id="wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="text-center">KATEGORI</h2>
-          <hr>
-        </div>
-        <div id="list-category" class="col-md-4">
-          <a href="fnd.html" class="card">
-            <div class="card-body">
-              <div class="card-images">
-                <img src="img/kategori/makanan.jpg">
-              </div>
-              <h4 class="card-title">MAKANAN & MINUMAN</h4>
-              <p class="card-desc">Yuk Cari Cemilan disini, dijamin rasa bintang lima kualitas kaki lima.</p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">KATEGORI</h2>
+      </div>
+      <div id="category" class="col-md-4">
+        <a href="fnd.html" class="card">
+          <div class="card-body">
+            <div class="card-images">
+              <img src="img/makanan.jpg">
             </div>
-          </a>
-        </div>
-        <div id="list-category" class="col-md-4">
-          <a href="#" class="card">
-            <div class="card-body">
-              <div class="card-images">
-                <img src="img/kategori/pakaian.jpg">
-              </div>
-              <h4 class="card-title">PAKAIAN</h4>
-              <p class="card-desc">Buat kamu yang lagi carai pakain yang lagi trend namun harga bershabat</p>
+            <h4 class="card-title">MAKANAN & MINUMAN</h4>
+            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id condimentum nunc. Curabitur placerat diam a augue pellentesque.</p>
+          </div>
+        </a>
+      </div>
+      <div id="category" class="col-md-4">
+        <a href="pakaian.html" class="card">
+          <div class="card-body">
+            <div class="card-images">
+              <img src="img/pakaian.jpg">
             </div>
-          </a>
-        </div>
-        <div id="list-category" class="col-md-4">
-          <a href="#" class="card">
-            <div class="card-body">
-              <div class="card-images">
-                <img src="img/kategori/lainnya.jpg">
-              </div>
-              <h4 class="card-title">LAINNYA</h4>
-              <p class="card-desc">Temukan hal lain dari produk kami yang unik dan menarik disini</p>
+            <h4 class="card-title">PAKAIAN</h4>
+            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id condimentum nunc. Curabitur placerat diam a augue pellentesque.</p>
+          </div>
+        </a>
+      </div>
+      <div id="category" class="col-md-4">
+        <a href="lainnya.html" class="card">
+          <div class="card-body">
+            <div class="card-images">
+              <img src="img/lainnya.jpg">
             </div>
-          </a>
-        </div>
+            <h4 class="card-title">LAINNYA</h4>
+            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id condimentum nunc. Curabitur placerat diam a augue pellentesque.</p>
+          </div>
+        </a>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-  <footer class="footer border-top p-5 mt-5">
+
+ <!-- Footer -->
+  <footer class="footer border-top p-5">
     <div class="container footer">
       <div class="row justify-content-between">
         <div class="col-1">
@@ -147,14 +151,15 @@
         </div>
         <div class="col-6">
           <nav class="nav justify-content-end text-uppercase">
-            <a class="nav-item text-white" href="feedback.html">Kotak Keluhan</a>
-            <a class="nav-item text-white" href="about.html">Tentang Kami</a>
+            <a class="nav-item text-white" href="kotak-saran.html">Kotak Keluhan</a>
+            <a class="nav-item text-white" href="tentang-kami.html">Tentang Kami</a>
           </nav>
         </div>
       </div>
     </div>
   </footer>
   <!-- Akhir Footer -->
+
   
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -162,3 +167,6 @@
 <script type="text/javascript" src="https://kit.fontawesome.com/b5a2fc8854.js"></script>
 </body>
 </html>
+
+
+
