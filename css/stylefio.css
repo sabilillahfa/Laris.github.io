@@ -41,7 +41,7 @@ footer{
     border: transparent;
 }
 #wrapper{
-    min-height: calc(100vh - (69px + 54px));
+    min-height: calc(100vh - (70px + 210px));
     padding: 15px 0;
 }
 #sliders{
