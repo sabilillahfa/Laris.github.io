@@ -55,6 +55,23 @@ footer{
     height: 10px;
     border-radius: 100%;
 }
+.tentang-carousel{
+    width: 50%;
+    margin: 15px auto;
+}
+.sliders{
+    position: relative;
+}
+.sliders .sliders-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    background: rgba(0,0,0,.2);
+}
 #unggulan .card-header{
     display: flex;
     background-color: transparent;
