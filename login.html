@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="css/all.css">
+
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:200,400,600&display=swap"
+        rel="stylesheet">
+
+      <!-- My CSS -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <title>Laris.com - Log In</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header bg-transparent mb-0"><h5 class="text-center"><span class="font-weight-bold text-primary">LOGIN</span></h5></div>
+              <div class="card-body">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" id="usrname" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="pass" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                    <label class="custom-control-label" for="customControlAutosizing">Ingat Saya</label>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-outline-info" onclick="pkA()">Log In</button>
+                     <button type="button" class="btn btn-outline-success" onclick="pkB()">Sign In</button>
+                  </div>
+                </form>
+
+                 <script>
+                    function pkA() {
+                      location.replace("index.html")
+                    }
+                    function pkB() {
+                      location.replace("signin.html")
+                    }
+                 </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
