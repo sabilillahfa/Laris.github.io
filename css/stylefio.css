@@ -12,6 +12,15 @@ a:hover{
 img{
     max-width: 100%;
 }
+.btn-laris{
+    background-color: #55BF53;
+    border-color: #55BF53;
+}
+.btn-laris:hover,
+.btn-laris:focus{
+    background-color: #55B053;
+    border-color: #55B053;
+}
 .bg-laris,
 .navbar-laris,
 footer{
@@ -45,6 +54,21 @@ footer{
 #wrapper{
     min-height: calc(100vh - (70px + 210px));
     padding: 15px 0;
+}
+#gambar-product{
+    display: flex;
+    margin: 15px auto;
+}
+#gambar-product .list-gambar-product{
+    max-width: 25%;
+    height: 100%;
+    padding: 0 5px;
+    
+}
+#gambar-product .list-gambar-product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #sliders{
     margin: 15px 0;

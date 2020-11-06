@@ -10,10 +10,6 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.css">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:200,400,600&display=swap"
@@ -23,7 +19,7 @@
     <link rel="stylesheet" href="css/stylefio.css">
     <link rel="stylesheet" href="css/style.css">
 
-  <title>Laris.com - Lainnya</title>
+  <title>Laris.com - Data Product</title>
 </head>
 
 
@@ -46,8 +42,8 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Beranda</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link active" href="kategori.html">Kategori</a>
+          <li class="nav-item ">
+            <a class="nav-link " href="kategori.html">Kategori</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
@@ -81,88 +77,71 @@
     <div class="container">
       <!-- Breadcrumbs -->
       <ol class="breadcrumb bg-transparent pl-0">
-        <li class="breadcrumb-item"><a href="kategori.html">Kategori</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Lainnya</li>
+        <li class="breadcrumb-item">Admin</li>
+        <li class="breadcrumb-item active" aria-current="page">Edit Data Product</li>
       </ol>
-  
-      <div class="row">
-        <div class="col-12">
-          <h2 class="text-center">LAINNYA</h2>
-        </div>
-        <!-- COPAS DARI SINI -->
-        <div id="item" class="col-md-4">
-          <div class="my-3">
-            <h4>TOTEBAG</h4>
-          </div>
-          <a href="productview.html" class="card">
-            <div class="card-images">
-              <img class="card-img-top" src="img/item/totebag.jpg" alt="Card image">
+
+      <!-- CODE HERE -->
+      <div class="card">
+        <div class="card-body">
+          
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="">nama product</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Help text</small>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">TOTEBAG</h5>
-              <p class="card-desc">Rp. 123.123</p>
+            <div class="form-group">
+              <label for="">nama toko</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Help text</small>
             </div>
-          </a>
-        </div>
-        <!-- COPAS SAMPAI SINI -->
-        <div id="item" class="col-md-4">
-          <div class="my-3">
-            <h4>BINDER</h4>
-          </div>
-          <a href="productview.html" class="card">
-            <div class="card-images">
-              <img class="card-img-top" src="img/item/binder.jpg" alt="Card image">
+            <div class="form-group">
+              <label for="">jam order</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Help text</small>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">BINDER</h5>
-              <p class="card-desc">Rp. 123.123</p>
+            <div class="form-group">
+              <label for="">kontak</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Help text</small>
             </div>
-          </a>
-        </div>
-        <div id="item" class="col-md-4">
-          <div class="my-3">
-            <h4>MASKER</h4>
-          </div>
-          <a href="productview.html" class="card">
-            <div class="card-images">
-              <img class="card-img-top" src="img/item/mask.jpg" alt="Card image">
+            <div class="form-group">
+              <label for="">alamat</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Help text</small>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">MASKER</h5>
-              <p class="card-desc">Rp. 123.123</p>
+            <div class="form-group">
+              <label for="">Unggah Gambar Product</label>
+              <div id="gambar-product">
+                <div class="list-gambar-product">
+                  <img src="img/makanan.jpg" alt="">
+                </div>
+                <div class="list-gambar-product">
+                  <img src="img/makanan.jpg" alt="">
+                </div>
+                <div class="list-gambar-product">
+                  <img src="img/makanan.jpg" alt="">
+                </div>
+                <div class="list-gambar-product">
+                  <img src="img/makanan.jpg" alt="">
+                </div>
+                <div class="list-gambar-product">
+                  <img src="img/makanan.jpg" alt="">
+                </div>
+              </div>
+              <input type="file" accept="image/x-png,image/jpeg,video/*" class="form-control-file border">
+              <small id="fileHelpId" class="form-text text-muted">Help text</small>
             </div>
-          </a>
-        </div>
-        <div class="col-12">
-          <div class="my-3">
-            <h4>PAKETAN</h4>
-          </div>
-        </div>
-        <div id="item" class="col-md-4">
-          <a href="productview.html" class="card">
-            <div class="card-images">
-              <img class="card-img-top" src="img/item/paket_1.jpg" alt="Card image">
+            <div>
+              <button type="submit" class="btn btn-primary">Simpan</button>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">TOTEBAG DAN MASKER</h5>
-              <p class="card-desc">Rp. 123.123</p>
-            </div>
-          </a>
-        </div>
-        <div id="item" class="col-md-4">
-          <a href="productview.html" class="card">
-            <div class="card-images">
-              <img class="card-img-top" src="img/item/paket_2.jpg" alt="Card image">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">TOTEBAG DAN BINDER</h5>
-              <p class="card-desc">Rp. 123.123</p>
-            </div>
-          </a>
+          </form>
         </div>
       </div>
     </div>
   </div>
+
  <!-- Footer -->
   <footer class="footer border-top p-5">
     <div class="container footer">

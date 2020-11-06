@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:200,400,600&display=swap"
+    rel="stylesheet">
+  
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/stylefio.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  <title>Laris.com - Admin</title>
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      
+    <!-- Logo Navbar -->
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Laris.com">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-uppercase mx-auto">
+          <li class="nav-item">
+            <a class="nav-link ac" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kategori.html">Kategori</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
+          </li>
+        </ul>
+        <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+              <i class="fas fa-user fa-fw text-white"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <!-- admin panel start -->
+              <div class="dropdown-header">Admin Panel</div>
+              <a class="dropdown-item" href="data-users.html">Data User</a>
+              <a class="dropdown-item" href="data-transaksi.html">Data Transaksi</a>
+              <a class="dropdown-item" href="data-product.html">Data Produk</a>
+              <div class="dropdown-divider"></div>
+              <!-- admin panel end -->
+              <a class="dropdown-item" href="profile.html">Profil</a>
+              <a class="dropdown-item" href="login.html">Keluar</a>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+  
+
+  <div id="wrapper">
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <ol class="breadcrumb bg-transparent pl-0">
+        <li class="breadcrumb-item"><a href="kategori.html">Admin</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Transaksi</li>
+      </ol>
+      <section class="mt-0">
+              <div class="card">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table id="DataTable" class="table table-bordered table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th>Customer Name</th>
+                          <th>Transaction Description</th>
+                          <th>Price</th>
+                          <th>Active</th>
+                          <th>Date</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                        <tr>
+                          <td>Bambang Gentolet</td>
+                          <td>Pisang Keju Ajib</td>
+                          <td>125.000</td>
+                          <td id="id_aktif"></td>
+                          <td>16/11/2020</td>
+                          <td class="text-center"> 
+                              <form id="form"action="">                            
+                                <input type="hidden" name="id_aktif" value="hidden" required>
+                              
+                                <button type="button" class="btn btn-fishi" data-toggle="modal" data-target="#myModal"><i class="fas fa-edit fa-fw"></i></button>
+                                <button type="submit" class="btn btn-danger confirm"><i class="fas fa-eraser fa-fw"></i></button>
+                              </form>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>Bambang Gentolet KW</td>
+                          <td>Pisang Keju Ajib</td>
+                          <td>125.000</td>
+                          <td id="id_aktif">Yes</td>
+                          <td>16/11/2020</td>
+                          <td class="text-center"> 
+                              <form id="form"action="">                            
+                                <input type="hidden" name="id_aktif" value="hidden" required>
+                              
+                                <button type="button" class="btn btn-fishi" data-toggle="modal" data-target="#myModal"><i class="fas fa-edit fa-fw"></i></button>
+                                <button type="submit" class="btn btn-danger confirm"><i class="fas fa-eraser fa-fw"></i></button>
+                              </form>
+                          </td>
+                        </tr>
+                        
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Activation Status</h4>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  klik active jika transaksi telah dilakukan...
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="inputData()">Yes</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="inputData()">No</button>
+                                </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+ <!-- Footer -->
+  <footer class="footer border-top p-5">
+    <div class="container footer">
+      <div class="row justify-content-between">
+        <div class="col-1">
+          <a href="">
+            <img src="img/logo.png" alt="Laris.com">
+          </a>
+        </div>
+        <div class="col-4 text-right">
+          <a href="">
+            <img src="img/social/fb.png">
+          </a>
+          <a href="">
+            <img src="img/social/twitter.png">
+          </a>
+          <a href="">
+            <img src="img/social/ig.png">
+          </a>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-between">
+        <div class="col-5">
+          <p style="color: #EAEAEF; font-weight: 600;">&copy All Rights Reserved by Laris.com Store Copyright 2019</p>
+        </div>
+        <div class="col-6">
+          <nav class="nav justify-content-end text-uppercase">
+            <a class="nav-item text-white" href="kotak-saran.html">Kotak Keluhan</a>
+            <a class="nav-item text-white" href="tentang-kami.html">Tentang Kami</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Akhir Footer -->
+
+  
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://kit.fontawesome.com/b5a2fc8854.js"></script>
+</body>
+</html>

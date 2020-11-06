@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/stylefio.css">
     <link rel="stylesheet" href="css/style.css">
 
-  <title>Laris.com - Kategori</title>
+  <title>Laris.com - Profile</title>
 </head>
 
 
@@ -59,7 +59,14 @@
             <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
               <i class="fas fa-user fa-fw text-white"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-menu dropdown-menu-right">+
+              <!-- admin panel start -->
+              <div class="dropdown-header">Admin Panel</div>
+              <a class="dropdown-item" href="data-users.html">Data User</a>
+              <a class="dropdown-item" href="data-transaksi.html">Data Transaksi</a>
+              <a class="dropdown-item" href="data-product.html">Data Produk</a>
+              <div class="dropdown-divider"></div>
+              <!-- admin panel end -->
               <a class="dropdown-item" href="profile.html">Profil</a>
               <a class="dropdown-item" href="login.html">Keluar</a>
             </div>
@@ -94,10 +101,7 @@
               <a class="nav-link" href="profile.html">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Alamat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Atur Password</a>
+              <a class="nav-link" href="ubahpassword.html">Atur Password</a>
             </li>
           </ul>
           
@@ -184,7 +188,7 @@
                   <tr>
                     <td></td>
                     <td>
-                      <button type="submit" class="btn btn-primary">Save</button>
+                      <button type="submit" class="btn btn-primary">Simpan</button>
                     </td>
                   </tr>
                 </table>
@@ -196,7 +200,7 @@
                 <div class="mb-2">
                   <img src="img/profil.jpg" alt="">
                 </div>
-                <input type="file" class="form-control-file border">
+                <input type="file" accept="image/x-png,image/jpeg" class="form-control-file border">
               </form>
             </div>
           </div>
